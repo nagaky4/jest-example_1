@@ -17,7 +17,11 @@ const ListPet = (props, context) => {
       return (
         <li key={index}>
           {value}
-          <button type="button" onClick={() => onChoosePet(index)}>
+          <button
+            type="button"
+            className="btn btn-primary ml-3"
+            onClick={() => onChoosePet(index)}
+          >
             choose pet
           </button>
         </li>
